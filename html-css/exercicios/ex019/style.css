@@ -1,0 +1,27 @@
+@charset "UTF-8";
+body {
+    background-color: burlywood;
+}
+h1#principal {
+    text-align: center;
+    color: aliceblue; 
+    background-color: burlywood;  
+}
+h1 {
+    color: #3930b8;
+    background-color: cadetblue;
+}
+
+h2 {
+
+    color: cornflowerblue;
+}
+.basico {
+    color: forestgreen;
+}
+.intermediario {
+    color: darkorchid;
+}
+.avancado {
+    color: darkred;
+}

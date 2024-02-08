@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Dragon Ball History</h1>
+        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Clássico</a></li>
+                <li><a href="#">Saga Z</a></li>
+                <li><a href="#">Saga Cell</a></li>
+                <li><a href="#">Saga Bull</a></li>
+                <li><a href="#">GT</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>O começo</h2>
+            <p>Akira Toiriyama nasceu em 1955, na pequena cidade de Kiyosu, na província de Aichi, no leste do Japão. Como o próprio Toriyama explica, desde a escola ele se interessava por mangás, e foi entre seus colegas de classe que ele teve seu primeiro público.</p>
+            <p>	"Sempre gostei de desenhar", disse ele ao site Stormpages há alguns anos. "Quando eu era pequeno, não tínhamos tantas formas de entretenimento como hoje, então todos nós desenhávamos. Na escola primária, todos desenhávamos mangás ou personagens animados e os mostrávamos uns aos outros."</p>
+            <p>O criador de Dragon Ball se declara um grande fã de filmes de animação da Disney em sua infância (ele tinha uma fixação particular com 101 Dálmatas), filmes de velho-oeste (que na época de Toriyama estavam atingindo sua expressão máxima com Sergio Leone), ficção científica (Toriyama fez muitas referências a Star Wars em suas histórias) e ação (de Bruce Lee e Jackie Chan a Aliens, de James Cameron).
+
+                Sua primeira oportunidade de escrever um mangá profissionalmente viria em 1977, depois que um dos editores da Shueisha - a editora de mangá mais importante do Japão - viu seu trabalho durante um concurso anual da revista Monthly Shonen Jump para encontrar novos talentos.</p>
+        </article>
+    </main>
+    <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+
+        }
+
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+
+        }
+    </script>
+</body>
+</html>

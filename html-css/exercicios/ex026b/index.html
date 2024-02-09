@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragon Ball</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+    <link rel="shortcut icon" href="android-chrome-192x192.png" type="image/x-icon">
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Dragon Ball History</h1>
+        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Clássico</a></li>
+                <li><a href="#">Saga Z</a></li>
+                <li><a href="#">Saga Cell</a></li>
+                <li><a href="#">Saga Bull</a></li>
+                <li><a href="#">GT</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>O começo</h2>
+            <p>Akira Toiriyama nasceu em 1955, na pequena cidade de Kiyosu, na província de Aichi, no leste do Japão. Como o próprio Toriyama explica, desde a escola ele se interessava por mangás, e foi entre seus colegas de classe que ele teve seu primeiro público.</p>
+            <p>	"Sempre gostei de desenhar", disse ele ao site Stormpages há alguns anos. "Quando eu era pequeno, não tínhamos tantas formas de entretenimento como hoje, então todos nós desenhávamos. Na escola primária, todos desenhávamos mangás ou personagens animados e os mostrávamos uns aos outros."</p>
+            <p>O criador de Dragon Ball se declara um grande fã de filmes de animação da Disney em sua infância (ele tinha uma fixação particular com 101 Dálmatas), filmes de velho-oeste (que na época de Toriyama estavam atingindo sua expressão máxima com Sergio Leone), ficção científica (Toriyama fez muitas referências a Star Wars em suas histórias) e ação (de Bruce Lee e Jackie Chan a Aliens, de James Cameron).
+
+                Sua primeira oportunidade de escrever um mangá profissionalmente viria em 1977, depois que um dos editores da Shueisha - a editora de mangá mais importante do Japão - viu seu trabalho durante um concurso anual da revista Monthly Shonen Jump para encontrar novos talentos.</p>
+            <h2>O impacto de Dragon Ball</h2>
+            <p>Quando Toriyama parou de escrever o mangá de Dragon Ball Z, a sequência de Dragon Ball muito mais bem-sucedida, em 1996, ele havia escrito quase 9 mil páginas sobre as aventuras de Goku e seus amigos.</p>
+            <p>A saga original foi adaptada para uma bem sucedida série de televisão de 156 episódios, que foi vista em todo o mundo graças à participação do estúdio Toei Animation no projeto. O sucesso abriu as portas para o plano muito mais ambicioso de adaptar Dragon Ball Z para a televisão: foram produzidos 291 episódios da sequência, que foram transmitidos em pelo menos 81 países.</p>
+            <p>Até agora, existem 24 filmes de Dragon Ball e quase 50 videogames baseados nos personagens que Toriyama criou.</p>
+            <p>Em 2001, ano em que Dragon Ball Z foi a série mais assistida do canal americano de desenhos animados Cartoon Network, a palavra "dragonball" foi topo da lista de termos mais pesquisados na internet, superando até Britney Spears.</p>
+            <p>Dragon Ball também se tornou a "porta de entrada" para o mangá e o anime para milhares de artistas, fãs e escritores ao redor do mundo.</p>
+        </article>
+    </main>
+    <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+
+        }
+
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+
+        }
+    </script>
+</body>
+</html>
